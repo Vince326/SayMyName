@@ -14,7 +14,7 @@ struct Char: Decodable {
     let images: [URL]
     let aliases: [String]
     let status: String
-    let potrayedBy: String
+    let portrayedBy: String
     var death: Death?
     //let Quote: Quote
     
@@ -25,7 +25,7 @@ struct Char: Decodable {
         case images
         case aliases
         case status
-        case potrayedBy
+        case portrayedBy
         
         
     }
@@ -38,7 +38,7 @@ struct Char: Decodable {
         self.images = try container.decode([URL].self, forKey: .images)
         self.aliases = try container.decode([String].self, forKey: .aliases)
         self.status = try container.decode(String.self, forKey: .status)
-        self.potrayedBy = try container.decode(String.self, forKey: .potrayedBy)
+        self.portrayedBy = try container.decode(String.self, forKey: .portrayedBy)
         
         let deathdecoder = JSONDecoder()
         deathdecoder.keyDecodingStrategy = .convertFromSnakeCase
