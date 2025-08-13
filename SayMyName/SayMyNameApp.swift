@@ -22,7 +22,7 @@ struct SayMyNameApp: App {
  ✅Utilize all character images on character view
  ✅Autoscroll to the bottom after status is shown
  - Fetch episode data
- - Extend String to get rid of long image and color names
- - Create static constants for show names
+ ✅Extend String to get rid of long image and color names
+ ✅Create static constants for show names
  
  */
